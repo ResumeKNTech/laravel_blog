@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Api\Vue;
+namespace App\Http\Controllers\Api\Vue\Complete;
 
 use App\Http\Controllers\Controller;
 use App\Models\Post;

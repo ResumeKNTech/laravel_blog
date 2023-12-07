@@ -1,9 +1,9 @@
 <?php
 
-use App\Http\Controllers\Api\Vue\CompletePostController;
-use App\Http\Controllers\Api\Vue\CompletePostCategoryController;
-use App\Http\Controllers\Api\Vue\CompletePostTagController;
-use App\Http\Controllers\Api\Vue\CompletePostCommentController;
+use App\Http\Controllers\Api\Vue\Complete\CompletePostController;
+use App\Http\Controllers\Api\Vue\Complete\CompletePostCategoryController;
+use App\Http\Controllers\Api\Vue\Complete\CompletePostTagController;
+use App\Http\Controllers\Api\Vue\Complete\CompletePostCommentController;
 use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\Api\Auth\LogoutController;
 use App\Http\Controllers\Api\Auth\RegisterController;
