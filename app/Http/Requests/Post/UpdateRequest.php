@@ -22,6 +22,7 @@ class UpdateRequest extends StoreRequest
     {
         return [
             'title' => 'required|string|max:255',
+            'slug' => 'required',
             'summary' => 'required|string|max:500',
             'description' => 'nullable|string',
             'quote' => 'nullable|string',

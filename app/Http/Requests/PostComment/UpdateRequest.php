@@ -4,14 +4,14 @@ namespace App\Http\Requests\PostComment;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateRequest extends FormRequest
+class UpdateRequest extends StoreRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,10 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'slug' => 'required',
+            'comment' => 'sometimes|required|string',
+            'status' => 'sometimes|in:active,inactive',
+            'replied_comment' => 'nullable|string',
         ];
     }
 }
